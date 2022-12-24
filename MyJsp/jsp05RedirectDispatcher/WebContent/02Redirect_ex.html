@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+사용자에게 naver,google,다음중 하나를 선택하게 해서 선택된 페이지로 이동하는 서블릿을 만들어보자
+입력 페이지는 라디오 박스로 만들자
+redirect를 이용해서 사용자가 선택한 해당 페이지로 이동하게 만들어 보자
+ -->
+<form action="RedirectServlet_ex" method="get">
+	<select name="potal">
+		<option value="naver" name="site">naver</option>
+		<option value="google" name="site" selected="selected">google</option>
+		<option value="daum" name="site">daum</option>
+	</select>
+		<input type="submit" value="전송"><input type="reset" value="초기화"><br>
+		
+		<input type="radio" name="site" value="daum"/>다음 
+		<input type="radio" name="site" value="naver"/> 네이버	
+		<input type="radio" name="site" value="google"/> 구글
+	<input type ="submit" value="전송">
+</form>
+</body>
+</html>
