@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	 * 사용자의 아이디와 비밀번호를 입력받아 틀리면 입력페이지(login.html)로 redirect하고
+	 * 맞으면 04success.jsp forward 하여 사용자의 이름을 출력하시오
+	 * (java1,1234),(java2,1234)
+	 * servlet :LoginServlet로
+	 *프로젝트명은 porject06login으로 한다.
+	  -->
+	<h2>Login</h2>
+	<form action="LoginServlet" method="get">
+		ID : <input type="text" name="id"><br>
+		PW : <input type="password"name="pw"><br>
+		<input type="submit" value="login">
+ 	</form>  
+</body>
+</html>
